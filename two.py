@@ -9,18 +9,24 @@ endpoint.setQuery("""
     PREFIX dbpr: <http://dbpedia.org/resource/>
     PREFIX dbpo: <http://dbpedia.org/ontology/>
     PREFIX so: <http://schema.org/>
-    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema/>
     
 
-    SELECT DISTINCT ?film ?birthDate ?directorResource
+    SELECT DISTINCT ?filmTitle ?birthDate ?directorName 
         WHERE { 
         ?film rdf:type dbpo:Film .
+        ?film dbpp:name ?filmTitle .
         ?film dbpo:director ?directorResource .
-        ?directorResource rdfs:label "Quentin Tarantino"@en .
+        ?directorResource dbpo:birthName ?directorName .
         ?directorResource dbpp:birthDate ?birthDate .
-        } LIMIT 100 """)
+        FILTER(str(?birthDate)  =  '1963-03-27')
+        } LIMIT 1 """)
 
 endpoint.setReturnFormat(JSON) 
 results = endpoint.query().convert()
-for res in results["results"]["bindings"] : 
-    print res['birthDate']['value'].encode('utf-8')
+
+print results
+
+"""for res in results["results"]["bindings"] : 
+    pint (res['filmTitle']['value'] + " : " +res['directorName']['value']).encode('utf-8')
+    """
