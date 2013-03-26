@@ -31,7 +31,7 @@ WHERE {
     ?value rdfs:label ?vlabel .
 ?property rdfs:label ?plabel . }"""
 
-endpoint.setQuery(construct_query%{'uri':"http://dbpedia.org/resource/Asturias"})
+endpoint.setQuery(construct_query%{'uri':"http://dbpedia.org/resource/Film"})
 endpoint.setReturnFormat(XML)
 
 graph = endpoint.query().convert()
@@ -53,21 +53,17 @@ plugin.register(
 
 Language = 'en'
 
-query = graph.query("""
-        PREFIX dbpo: <http://dbpedia.org/ontology/>
-        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+query = graph.query("""PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-        SELECT DISTINCT ?location ?party ?leader
-        WHERE {
-        <http://dbpedia.org/resource/Asturias> rdfs:label ?location .
-        <http://dbpedia.org/resource/Asturias> dbpo:leaderName ?leaderResource .
-        ?leaderResource rdfs:label ?leader .
-        <http://dbpedia.org/resource/Asturias> dbpo:leaderParty ?partyResource .
-        ?partyResource rdfs:label ?party .
-        FILTER(LANG(?location)="%(lang)s" && LANG(?party)="%(lang)s" && LANG(?leader)="%(lang)s") .}""" %{'lang':Language})
-
+SELECT DISTINCT ?film_title ?film_abstract
+WHERE {
+?film_title rdf:type <http://dbpedia.org/ontology/Film> .
+?film_title rdfs:comment ?film_abstract .
+} LIMIT 1000 OFFSET 0""")        
+        
 print "RESULTS:"
 
 for row in query.result:
-    print(("The leader party of %s is %s who's leader is %s." % row).encode('utf-8'))
+    print(("%s %s" % row).encode('utf-8'))
 
