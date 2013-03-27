@@ -5,11 +5,25 @@ from rdflib.namespace import Namespace, RDF, RDFS
 from rdflib import plugin
 
 rdf_xml_data = '''
-@prefix dbpo: <http://www.qmul.ac.uk/semweb/g7/ontology/> .
+@prefix dbpo: <http://dbpedia.org/ontology/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix qm: <http://www.qmul.ac.uk/semweb/g7/ontology/>
+@prefix so: <http://schema.org/>
 
-<http://dbpedia.org/resource/Shakira> a dbpo:Person .
- <http://dbpedia.org/resource/Shakira> rdfs:label "Shakira" .   
+
+qm:Quentin_Tarantino a qm:Director .
+qm:Eric_Toledano a qm:Director .
+qm:Oliver_Nakache a qm:Director .
+qm:David_Fincher a qm:Director .
+
+
+
+qm:Pulp_Fiction a qm:Film .
+qm:Pulp_Fiction rdfs:label "Pulp Fiction" .
+qm:Pulp_Fiction qm:hasDirector qm:Quentin_Tarantino .
+qm:Pulp_Fiction qm:hasBudget "1850000"^^qm:Budget .
+
+
 '''
 
 memory_store = plugin.get('IOMemory',  Store)()
