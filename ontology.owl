@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/emmanuel/ontologies/2013/2/semweb-ontology"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/emmanuel/ontologies/2013/2/semweb-ontology">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://schema.org/</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The ontology that describes various movies based on the director, the location and budget</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Budget"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Director"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Film"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBudget"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDirector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBudgetOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCountryOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDirectorOf"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://schema.org/Country"/>
+        <Class IRI="#Country"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://schema.org/Movie"/>
+        <Class IRI="#Film"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Budget"/>
+        <Class IRI="http://schema.org/Float"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Budget"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isBudgetOf"/>
+            <Class IRI="#Film"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Director"/>
+        <Class IRI="http://schema.org/Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Director"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectorOf"/>
+            <Class IRI="#Film"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Film"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCountry"/>
+            <Class IRI="#Country"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Film"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasDirector"/>
+            <Class IRI="#Director"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isBudgetOf"/>
+        <ObjectProperty IRI="#hasBudget"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCountry"/>
+        <ObjectProperty IRI="#isCountryOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasDirector"/>
+        <ObjectProperty IRI="#isDirectorOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBudget"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCountry"/>
+        <Class IRI="#Director"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCountry"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDirector"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBudgetOf"/>
+        <Class IRI="#Budget"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCountryOf"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDirectorOf"/>
+        <Class IRI="#Director"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBudget"/>
+        <Class IRI="#Budget"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCountry"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDirector"/>
+        <Class IRI="#Director"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBudgetOf"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCountryOf"/>
+        <Class IRI="#Director"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCountryOf"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDirectorOf"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
