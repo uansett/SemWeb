@@ -20,13 +20,12 @@ endpoint.setQuery("""
         ?directorResource dbpo:birthName ?directorName .
         ?directorResource dbpp:birthDate ?birthDate .
         FILTER(str(?birthDate)  =  '1963-03-27')
-        } LIMIT 1 """)
+        } LIMIT 100 """)
 
 endpoint.setReturnFormat(JSON) 
 results = endpoint.query().convert()
 
-print results
+"""print results"""
 
-"""for res in results["results"]["bindings"] : 
-    pint (res['filmTitle']['value'] + " : " +res['directorName']['value']).encode('utf-8')
-    """
+for res in results["results"]["bindings"] : 
+    print (res['filmTitle']['value'] + " : " +res['directorName']['value']).encode('utf-8')
