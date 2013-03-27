@@ -5,7 +5,7 @@ from rdflib.namespace import Namespace, RDF, RDFS
 from rdflib import plugin
 
 rdf_xml_data = '''
-@prefix dbpo: <http://dbpedia.org/ontology/> .
+@prefix dbpo: <http://www.qmul.ac.uk/semweb/g7/ontology/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <http://dbpedia.org/resource/Shakira> a dbpo:Person .
@@ -36,10 +36,13 @@ print g.serialize(destination=None,  format='turtle', base=None,  encoding=None)
 print "Number of triples in the graph: %i" %len(g)
 g.parse(data=rdf_xml_data, format="turtle")
 print "Number of triples in the graph after parsing the string: %i" %len(g)
+g.parse('http://dbpedia.org/data/Pulp_Fiction.n3',  format='n3')
+print "Number of triples in the graph after parsing the string: %i" %len(g)
 
 
 """endpoint = SPARQLWrapper("http://dbpedia.org/sparql")"""
 
+print g.serialize(destination=None,  format='turtle', base=None,  encoding=None)
 
 
 
