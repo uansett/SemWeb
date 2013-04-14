@@ -38,11 +38,11 @@ g.parse('ontology.owl')
 
 query = """
 SELECT * WHERE {
-        ?s ?p ?o .
+        ?s ?p http://schema.org/Movie .
 }
 """
-#for row in g.query(query):
-#    print row
+for row in g.query(query):
+    print row
 
 for ns in g.namespaces():
     print "Prefix: %s => URI: %s" %ns
