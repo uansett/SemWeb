@@ -38,7 +38,7 @@ g.parse('ontology.owl')
 
 query = """
 SELECT * WHERE {
-        ?s ?p http://schema.org/Movie .
+        ?s ?p <http://schema.org/Movie> .
 }
 """
 for row in g.query(query):
