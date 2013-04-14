@@ -47,7 +47,6 @@ print g.serialize(destination=None,  format='turtle', base=None,  encoding=None)
 print "Number of triples in the graph: %i" %len(g)
 g.parse(data=rdf_xml_data, format="turtle")
 print "Number of triples in the graph after parsing the string: %i" %len(g)
-#g.parse('http://dbpedia.org/data/Pulp_Fiction.n3',  format='n3')
 print "Number of triples in the graph after parsing the string: %i" %len(g)
 
 
