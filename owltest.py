@@ -49,12 +49,12 @@ g.parse(data=rdf_xml_data, format='turtle')
 
 query = """
 PREFIX qm: <http://qmul.ac.uk/sw/g7/ontology#>
-PREFIX dbpr: <http://dbpedia.org/resource/>
+PREFIX dbprc: <http://dbpedia.org/resource/Category:>
 PREFIX purl: <http://purl.org/dc/terms/>
 
 SELECT ?person WHERE {
         ?person rdf:type qm:Director .
-        ?person <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Grammy_Award_winners> .
+        ?person purl:subject dbprc:Grammy_Award_winners .
 }
 """
 for row in g.query(query):
