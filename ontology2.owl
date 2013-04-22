@@ -58,26 +58,21 @@
     
 
 
+    <!-- http://qmul.ac.uk/sw/g7/ontology#hasDistributed -->
+
+    <owl:ObjectProperty rdf:about="http://qmul.ac.uk/sw/g7/ontology#hasDistributed"/>
+    
+
+
     <!-- http://qmul.ac.uk/sw/g7/ontology#hasValue -->
 
     <owl:ObjectProperty rdf:about="http://qmul.ac.uk/sw/g7/ontology#hasValue">
-        <rdfs:domain rdf:resource="http://qmul.ac.uk/sw/g7/ontology#Budget"/>
         <rdfs:range>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://qmul.ac.uk/sw/g7/ontology#float"/>
                 <owl:allValuesFrom rdf:resource="&xsd;float"/>
             </owl:Restriction>
         </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://qmul.ac.uk/sw/g7/ontology#isBudgetOf -->
-
-    <owl:ObjectProperty rdf:about="http://qmul.ac.uk/sw/g7/ontology#isBudgetOf">
-        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://qmul.ac.uk/sw/g7/ontology#Budget"/>
-        <owl:inverseOf rdf:resource="http://qmul.ac.uk/sw/g7/ontology#hasBudget"/>
     </owl:ObjectProperty>
     
 
@@ -99,6 +94,17 @@
         <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
         <rdfs:domain rdf:resource="http://qmul.ac.uk/sw/g7/ontology#Film"/>
         <owl:inverseOf rdf:resource="http://qmul.ac.uk/sw/g7/ontology#hasDirected"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://qmul.ac.uk/sw/g7/ontology#isDistributedBy -->
+
+    <owl:ObjectProperty rdf:about="http://qmul.ac.uk/sw/g7/ontology#isDistributedBy">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Organisation"/>
+        <rdfs:domain rdf:resource="http://qmul.ac.uk/sw/g7/ontology#Film"/>
+        <owl:inverseOf rdf:resource="http://qmul.ac.uk/sw/g7/ontology#hasDistributed"/>
     </owl:ObjectProperty>
     
 
@@ -131,15 +137,15 @@
     
 
 
-    <!-- http://dbpedia.org/ontology/Person -->
+    <!-- http://dbpedia.org/ontology/Organisation -->
 
-    <owl:Class rdf:about="http://dbpedia.org/ontology/Person"/>
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Organisation"/>
     
 
 
-    <!-- http://qmul.ac.uk/sw/g7/ontology#Budget -->
+    <!-- http://dbpedia.org/ontology/Person -->
 
-    <owl:Class rdf:about="http://qmul.ac.uk/sw/g7/ontology#Budget"/>
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Person"/>
     
 
 

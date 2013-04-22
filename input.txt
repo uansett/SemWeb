@@ -1,0 +1,11 @@
+PREFIX qm: <http://qmul.ac.uk/sw/g7/ontology#>
+    PREFIX dbprc: <http://dbpedia.org/resource/Category:>
+    PREFIX purl: <http://purl.org/dc/terms/>
+    PREFIX dbpo: <http://dbpedia.org/ontology/>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX dbpd: <http://dbpedia.org/datatype/>
+    PREFIX dbpp: <http://dbpedia.org/property/>
+
+    SELECT ?film WHERE {
+        ?film a qm:Film .
+    }
