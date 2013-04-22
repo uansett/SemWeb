@@ -12,10 +12,18 @@ PREFIX dbpp: <http://dbpedia.org/property/>
 
 CONSTRUCT {
 ?film a qm:Film .
+?film qm:isDirectedBy ?director .
+?film dbpp:name ?title .
+?director a qm:Director .
+?film qm:hasBudget ?budget . 
 }
 WHERE{
 ?film a dbpo:Film . 
-} LIMIT 100
+?film dbpo:director ?director .
+?film dbpp:name ?title .
+?director a dbpo:Agent . 
+?film dbpo:budget ?budget . 
+} LIMIT 1000
 
 '''
 
@@ -29,7 +37,7 @@ rdf_xml_data = '''
 @prefix dbpr: <http://dbpedia.org/resource/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix qm: <http://qmul.ac.uk/sw/g7/ontology#> .
-@prefix so: <http://schema.org/> .
+@prefix dbpd: <http://dbpedia.org/datatype/> .
 
 
 dbpr:Quentin_Tarantino a qm:Director .
@@ -37,13 +45,11 @@ dbpr:Eric_Toledano a qm:Director .
 dbpr:Oliver_Nakache a qm:Director .
 dbpr:David_Fincher a qm:Director .
 
-
 qm:Pulp_Fiction a qm:Film .
 qm:Pulp_Fiction rdfs:label "Pulp Fiction" .
 qm:Pulp_Fiction qm:hasDirector qm:Quentin_Tarantino .
 qm:Pulp_Fiction_Budget a qm:Budget .
-qm:Pulp_Fiction qm:hasBudget qm:Pulp_Fiction_Budget .
-qm:Pulp_Fiction_Budget qm:hasValue "185000"^^rdfs:float .
+qm:Pulp_Fiction qm:hasBudget "185000"^^dbpd:usDollar .
 
 qm:Fear_And_Loathing_In_Las_Vegas a qm:Film .
 qm:Fear_And_Loathing_In_Las_Vegas rdfs:label "Fear and Loathing in Las Vegas" .
@@ -72,9 +78,14 @@ PREFIX dbprc: <http://dbpedia.org/resource/Category:>
 PREFIX purl: <http://purl.org/dc/terms/>
 PREFIX dbpo: <http://dbpedia.org/ontology/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpd: <http://dbpedia.org/datatype/>
+PREFIX dbpp: <http://dbpedia.org/property/>
 
-SELECT ?film WHERE {
+SELECT ?film ?budget ?director WHERE {
         ?film a qm:Film .
+        ?film qm:hasBudget ?budget .
+        ?film qm:isDirectedBy ?director .
+        ?director purl:subject dbprc:Grammy_Award_winners .
 }
 """
 for row in g.query(query):
