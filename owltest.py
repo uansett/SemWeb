@@ -3,9 +3,26 @@ import rdflib
 from rdflib.graph import Graph,  Store,  URIRef,  Literal
 from rdflib.namespace import Namespace, RDF, RDFS
 from rdflib import plugin
+# The Endpoint configuration
 endpoint = SPARQLWrapper("http://dbpedia.org/sparql")
+construct_query = '''
+PREFIX qm: <http://qmul.ac.uk/sw/g7/ontology#> 
+PREFIX dbpo: <http://dbpedia.org/ontology/> 
+PREFIX dbpp: <http://dbpedia.org/property/>
 
+CONSTRUCT {
+?film a qm:Film .
+}
+WHERE{
+?film a dbpo:Film . 
+} LIMIT 100
 
+'''
+
+endpoint.setQuery(construct_query)
+
+endpoint.setReturnFormat(RDF)
+# END Endpoint configuration
 
 rdf_xml_data = '''
 @prefix dbpo: <http://dbpedia.org/ontology/> .
@@ -30,8 +47,8 @@ qm:Pulp_Fiction_Budget qm:hasValue "185000"^^rdfs:float .
 
 qm:Fear_And_Loathing_In_Las_Vegas a qm:Film .
 qm:Fear_And_Loathing_In_Las_Vegas rdfs:label "Fear and Loathing in Las Vegas" .
+qm:Fear_And_Loathing_in_Las_Vegas qm:isDirectedBy dbpr:Frank_Darabont .
 
-<http://dbpedia.org/resource/Frank_Darabont> qm:hasDirected qm:Fear_And_Loathing_in_Las_Vegas .
 
 '''
 memory_store = plugin.get('IOMemory', Store)()
@@ -42,19 +59,22 @@ rdflib.plugin.register('sparql', rdflib.query.Processor,
 rdflib.plugin.register('sparql', rdflib.query.Result,
                        'rdfextras.sparql.query', 'SPARQLQueryResult')
 g = Graph(store=memory_store, identifier=graph_id) 
+g = endpoint.query().convert()
 g.parse('ontology2.owl')
 g.parse('Frank_Darabont.n3', format='turtle')
 g.parse('Grammy_Award_winners.n3', format='turtle') 
 g.parse(data=rdf_xml_data, format='turtle')
 
+
 query = """
 PREFIX qm: <http://qmul.ac.uk/sw/g7/ontology#>
 PREFIX dbprc: <http://dbpedia.org/resource/Category:>
 PREFIX purl: <http://purl.org/dc/terms/>
+PREFIX dbpo: <http://dbpedia.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?person WHERE {
-        ?person rdf:type qm:Director .
-        ?person purl:subject dbprc:Grammy_Award_winners .
+SELECT ?film WHERE {
+        ?film a qm:Film .
 }
 """
 for row in g.query(query):

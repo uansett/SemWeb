@@ -34,12 +34,13 @@ WHERE {
 endpoint.setQuery(construct_query%{'uri':"http://dbpedia.org/resource/Film"})
 endpoint.setReturnFormat(XML)
 
+graph = Graph()
 graph = endpoint.query().convert()
 
-'''
+
 for s, p, o in graph:
     print s.encode('utf-8'), p.encode('utf-8'), o.encode('utf-8')
-'''
+
 
 """
 PART 2: query the resulting resulting RDF graph
@@ -53,17 +54,17 @@ plugin.register(
 
 Language = 'en'
 
-query = graph.query("""PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
-SELECT DISTINCT ?film_title ?film_abstract
-WHERE {
-?film_title rdf:type <http://dbpedia.org/ontology/Film> .
-?film_title rdfs:comment ?film_abstract .
-} LIMIT 1000 OFFSET 0""")        
+#query = graph.query("""PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+#PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+#
+#SELECT DISTINCT ?film_title ?film_abstract
+#WHERE {
+#?film_title rdf:type <http://dbpedia.org/ontology/Film> .
+#?film_title rdfs:comment ?film_abstract .
+#} LIMIT 1000 OFFSET 0""")        
         
-print "RESULTS:"
+#print "RESULTS:"
 
-for row in query.result:
-    print(("%s %s" % row).encode('utf-8'))
+#for row in query.result:
+#    print(("%s %s" % row).encode('utf-8'))
 

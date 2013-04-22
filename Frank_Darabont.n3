@@ -1,0 +1,219 @@
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+@prefix ns1:	<http://en.wikipedia.org/wiki/> .
+@prefix dbpedia:	<http://dbpedia.org/resource/> .
+ns1:Frank_Darabont	foaf:primaryTopic	dbpedia:Frank_Darabont .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix yago-res:	<http://mpii.de/yago/resource/> .
+yago-res:Frank_Darabont	owl:sameAs	dbpedia:Frank_Darabont .
+@prefix dbpedia-owl:	<http://dbpedia.org/ontology/> .
+dbpedia:The_Fly_II	dbpedia-owl:writer	dbpedia:Frank_Darabont .
+@prefix dbpprop:	<http://dbpedia.org/property/> .
+dbpedia:The_Fly_II	dbpprop:screenplay	dbpedia:Frank_Darabont .
+<http://dbpedia.org/resource/The_Green_Mile_(film)>	dbpedia-owl:producer	dbpedia:Frank_Darabont ;
+	dbpprop:director	dbpedia:Frank_Darabont ;
+	dbpedia-owl:writer	dbpedia:Frank_Darabont ;
+	dbpedia-owl:director	dbpedia:Frank_Darabont .
+<http://dbpedia.org/resource/The_Mist_(film)>	dbpedia-owl:producer	dbpedia:Frank_Darabont ;
+	dbpprop:director	dbpedia:Frank_Darabont ;
+	dbpedia-owl:writer	dbpedia:Frank_Darabont ;
+	dbpedia-owl:director	dbpedia:Frank_Darabont .
+<http://dbpedia.org/resource/The_Majestic_(film)>	dbpedia-owl:producer	dbpedia:Frank_Darabont ;
+	dbpprop:director	dbpedia:Frank_Darabont ;
+	dbpprop:producer	dbpedia:Frank_Darabont ;
+	dbpedia-owl:director	dbpedia:Frank_Darabont .
+dbpedia:Days_Gone_Bye	dbpprop:director	dbpedia:Frank_Darabont ;
+	dbpedia-owl:director	dbpedia:Frank_Darabont .
+<http://dbpedia.org/resource/Frankenstein_(1994_film)>	dbpprop:writer	dbpedia:Frank_Darabont ;
+	dbpedia-owl:writer	dbpedia:Frank_Darabont .
+dbpedia:The_Shawshank_Redemption	dbpprop:director	dbpedia:Frank_Darabont ;
+	dbpedia-owl:writer	dbpedia:Frank_Darabont ;
+	dbpedia-owl:director	dbpedia:Frank_Darabont .
+dbpedia:List_of_The_Young_Indiana_Jones_Chronicles_episodes	dbpprop:writtenby	dbpedia:Frank_Darabont .
+dbpedia:TS-19	dbpprop:writer	dbpedia:Frank_Darabont ;
+	dbpedia-owl:writer	dbpedia:Frank_Darabont .
+dbpedia:Tell_It_to_the_Frogs	dbpprop:teleplay	dbpedia:Frank_Darabont .
+<http://dbpedia.org/resource/The_Walking_Dead_(TV_series)>	dbpedia-owl:developer	dbpedia:Frank_Darabont ;
+	dbpprop:developer	dbpedia:Frank_Darabont ;
+	dbpedia-owl:executiveProducer	dbpedia:Frank_Darabont ;
+	dbpprop:executiveProducer	dbpedia:Frank_Darabont .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix yago:	<http://dbpedia.org/class/yago/> .
+dbpedia:Frank_Darabont	rdf:type	yago:Actor109765278 ,
+		yago:LivingPeople ,
+		yago:AmericanScreenwriters ,
+		yago:AmericanPeopleOfHungarianDescent ,
+		<http://dbpedia.org/class/yago/PeopleFromMontb%C3%A9liard> ,
+		yago:Person100007846 ,
+		owl:Thing ,
+		yago:AmericanFilmProduCErs ,
+		foaf:Person ,
+		<http://dbpedia.org/class/yago/PeopleFromLosAngeles,California> ,
+		yago:AmericanFilmDirectors ,
+		dbpedia-owl:Agent ,
+		dbpedia-owl:Person .
+@prefix ns9:	<http://schema.org/> .
+dbpedia:Frank_Darabont	rdf:type	ns9:Person ;
+	dbpprop:othername	"Frank A. Darabont"@en ,
+		"Ardeth Bey"@en .
+@prefix ns10:	<http://es.dbpedia.org/resource/> .
+dbpedia:Frank_Darabont	owl:sameAs	ns10:Frank_Darabont ,
+		dbpedia:Frank_Darabont ,
+		<http://data.linkedmdb.org/resource/producer/10889> .
+@prefix ns11:	<http://pt.dbpedia.org/resource/> .
+dbpedia:Frank_Darabont	owl:sameAs	ns11:Frank_Darabont .
+@prefix ns12:	<http://it.dbpedia.org/resource/> .
+dbpedia:Frank_Darabont	owl:sameAs	ns12:Frank_Darabont .
+@prefix ns13:	<http://ja.dbpedia.org/resource/> .
+dbpedia:Frank_Darabont	owl:sameAs	ns13:フランク・ダラボン ,
+		<http://rdf.freebase.com/ns/m.0419pw> .
+@prefix ns14:	<http://cs.dbpedia.org/resource/> .
+dbpedia:Frank_Darabont	owl:sameAs	ns14:Frank_Darabont .
+@prefix ns15:	<http://ko.dbpedia.org/resource/> .
+dbpedia:Frank_Darabont	owl:sameAs	ns15:프랭크_다라본트 .
+@prefix ns16:	<http://pl.dbpedia.org/resource/> .
+dbpedia:Frank_Darabont	owl:sameAs	ns16:Frank_Darabont ,
+		<http://ru.dbpedia.org/resource/\u0414\u0430\u0440\u0430\u0431\u043E\u043D\u0442,_\u0424\u0440\u044D\u043D\u043A> .
+@prefix ns17:	<http://de.dbpedia.org/resource/> .
+dbpedia:Frank_Darabont	owl:sameAs	ns17:Frank_Darabont .
+@prefix ns18:	<http://fr.dbpedia.org/resource/> .
+dbpedia:Frank_Darabont	owl:sameAs	ns18:Frank_Darabont .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+dbpedia:Frank_Darabont	rdfs:label	"Frank Darabont"@nl ,
+		"\u6CD5\u862D\u00B7\u9054\u62C9\u672C\u7279"@zh ,
+		"Frank Darabont"@hu ,
+		"\u30D5\u30E9\u30F3\u30AF\u30FB\u30C0\u30E9\u30DC\u30F3"@ja ,
+		"Frank Darabont"@de ,
+		"Frank Darabont"@fi ,
+		"Frank Darabont"@sv ,
+		"Frank Darabont"@fr ,
+		"\u0414\u0430\u0440\u0430\u0431\u043E\u043D\u0442, \u0424\u0440\u044D\u043D\u043A"@ru ,
+		"Frank Darabont"@pt ,
+		"\u0424\u0440\u0435\u043D\u043A \u0414\u0430\u0440\u0430\u0431\u043E\u043D\u0442"@uk ,
+		"Frank Darabont"@cs ,
+		"Frank Darabont"@pl ,
+		"Frank Darabont"@en ,
+		"Frank Darabont"@it ,
+		"Frank Darabont"@es ,
+		"\uD504\uB7AD\uD06C \uB2E4\uB77C\uBCF8\uD2B8"@ko ,
+		"Frank Darabont"@no ;
+	rdfs:comment	"Frank Darabont magyarul Darabont Ferenc magyar sz\u00E1rmaz\u00E1s\u00FA, amerikai filmrendez\u0151, forgat\u00F3k\u00F6nyv\u00EDr\u00F3, film producer, aki h\u00E1rom Golden Globe-d\u00EDj \u00E9s egy Oscar-d\u00EDj jel\u00F6l\u00E9ssel rendelkezik. Olyan nagy siker\u0171 filmek rendez\u0151je, mint A rem\u00E9ny rabjai, a Hal\u00E1lsoron \u00E9s A k\u00F6d, melyek Stephen King reg\u00E9nyei alapj\u00E1n k\u00E9sz\u00FCltek."@hu ,
+		"Frank Darabont est un r\u00E9alisateur, sc\u00E9nariste et acteur de cin\u00E9ma am\u00E9ricain d'origine hongroise n\u00E9 en France le 28 janvier 1959 \u00E0 Montb\u00E9liard."@fr ,
+		"Frank Darabont ist ein US-amerikanischer Drehbuchautor und Filmregisseur ungarischer Herkunft ."@de ,
+		"Frank Darabont \u2013 ameryka\u0144ski re\u017Cyser, scenarzysta i producent filmowy. Znany g\u0142\u00F3wnie dzi\u0119ki swoim ekranizacjom powie\u015Bci wi\u0119ziennych Stephena Kinga."@pl ,
+		"Frank Darabont \u00E9 um cineasta, roteirista e produtor de cinema franc\u00EAs. Fez v\u00E1rias adapta\u00E7\u00F5es dos livros de Stephen King."@pt ,
+		"\u0424\u0440\u0435\u043D\u043A \u0414\u0430\u0440\u0430\u0431\u043E\u043D\u0442\u00A0\u2014 \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u044C\u043A\u0438\u0439 \u043A\u0456\u043D\u043E\u0440\u0435\u0436\u0438\u0441\u0435\u0440, \u0441\u0446\u0435\u043D\u0430\u0440\u0438\u0441\u0442 \u0442\u0430 \u043F\u0440\u043E\u0434\u044E\u0441\u0435\u0440. \u0411\u0443\u0432 \u0442\u0440\u0438\u0447\u0456 \u043D\u043E\u043C\u0456\u043D\u043E\u0432\u0430\u043D\u0438\u0439 \u043D\u0430 \u00AB\u041E\u0441\u043A\u0430\u0440\u00BB. \u0412\u0456\u0434\u043E\u043C\u0438\u0439 \u0441\u0432\u043E\u0457\u043C\u0438 \u0432\u0434\u0430\u043B\u0438\u043C\u0438 \u0435\u043A\u0440\u0430\u043D\u0456\u0437\u0430\u0446\u0456\u044F\u043C\u0438 \u0440\u043E\u043C\u0430\u043D\u0456\u0432 \u0421\u0442\u0456\u0432\u0435\u043D\u0430 \u041A\u0456\u043D\u0433\u0430."@uk ,
+		"Frank Darabont es un director, guionista y productor de cine estadounidense de origen h\u00FAngaro."@es ,
+		"Frank Darabont er en amerikansk filmregiss\u00F8r med tre Academy Awards. American Han har v\u00E6rt involvert i produksjon til to Academy Award-nominerte filmer, Frihetens Regn og Den gr\u00F8nne mil."@no ,
+		"\u30D5\u30E9\u30F3\u30AF\u30FB\u30C0\u30E9\u30DC\u30F3\uFF08Frank Darabont, 1959\u5E741\u670828\u65E5 - \uFF09\u306F\u3001\u30A2\u30E1\u30EA\u30AB\u5408\u8846\u56FD\u306E\u811A\u672C\u5BB6\u3001\u6620\u753B\u76E3\u7763\u3001\u6620\u753B\u30D7\u30ED\u30C7\u30E5\u30FC\u30B5\u30FC\u3002"@ja ,
+		"Frank Darabont f\u00F6dd 28 januari 1959 i Montb\u00E9liard, Frankrike, \u00E4r regiss\u00F6r, manusf\u00F6rfattare, och filmproducent. Darabont slog igenom med det Oscarsnominerade dramat Nyckeln till frihet 1994 som var baserad p\u00E5 en av Stephen Kings b\u00F6cker. Fem \u00E5r senare gjorde han \u00E4nnu en King-baserad film: Den gr\u00F6na milen 1999."@sv ,
+		"Frank Darabont is een Hongaars-Amerikaanse filmregisseur en -scenarist. Zijn bekendste films zijn The Green Mile en The Shawshank Redemption."@nl ,
+		"\u0424\u0440\u044D\u043D\u043A \u0414\u0430\u0440\u0430\u0431\u043E\u043D\u0442\u00A0\u2014 \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0438\u0439 \u043A\u0438\u043D\u043E\u0440\u0435\u0436\u0438\u0441\u0441\u0451\u0440, \u0441\u0446\u0435\u043D\u0430\u0440\u0438\u0441\u0442 \u0438 \u043F\u0440\u043E\u0434\u044E\u0441\u0435\u0440. \u0411\u044B\u043B \u0442\u0440\u0438\u0436\u0434\u044B \u043D\u043E\u043C\u0438\u043D\u0438\u0440\u043E\u0432\u0430\u043D \u043D\u0430 \u00AB\u041E\u0441\u043A\u0430\u0440\u00BB. \u0418\u0437\u0432\u0435\u0441\u0442\u0435\u043D \u0441\u0432\u043E\u0438\u043C\u0438 \u0443\u0434\u0430\u0447\u043D\u044B\u043C\u0438 \u044D\u043A\u0440\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u044F\u043C\u0438 \u0440\u043E\u043C\u0430\u043D\u043E\u0432 \u0421\u0442\u0438\u0432\u0435\u043D\u0430 \u041A\u0438\u043D\u0433\u0430."@ru ,
+		"Frank Darabont je americk\u00FD filmov\u00FD re\u017Eis\u00E9r, scen\u00E1rista a producent. Je zn\u00E1m p\u0159edev\u0161\u00EDm d\u00EDky zfilmov\u00E1n\u00ED dvou d\u011Bl Stephena Kinga - Vykoupen\u00ED z v\u011Bznice Shawshank a Zelen\u00E1 m\u00EDle."@cs ,
+		"Frank Darabont on yhdysvaltalainen elokuvaohjaaja, -k\u00E4sikirjoittaja ja -tuottaja. H\u00E4n syntyi vuoden 1956 kansannousua paenneille unkarilaisille vanhemmille Montb\u00E9liardissa, Ranskassa. Darabont on ohjannut muiden muassa elokuvat Rita Hayworth \u2013 avain pakoon, Vihre\u00E4 maili ja The Mist \u2013 Usva; muun tuotannon joukkoon lukeutuu K\u00E4rp\u00E4nen II, johon h\u00E4n teki k\u00E4sikirjoituksen. Darabont tuotti ja k\u00E4sikirjoitti zombie-tv-sarjaa nimelt\u00E4 The Walking Dead, jonka pilottijakson h\u00E4n my\u00F6s ohjasi."@fi ,
+		"\uD504\uB7AD\uD06C \uB2E4\uB77C\uBCF8\uD2B8(Frank Darabont)\uB294 \uBBF8\uAD6D\uC778 \uC601\uD654\uAC10\uB3C5, \uAC01\uBCF8\uAC00, \uC81C\uC791\uC790\uC774\uB2E4. \uC544\uCE74\uB370\uBBF8\uC0C1\uC5D0 3\uBC88 \uB178\uBBF8\uB124\uC774\uD2B8 \uB418\uC5C8\uC73C\uBA70, \uADF8 \uC911 \uADF8\uAC00 \uAC10\uB3C5\uD55C \uC791\uD488\uC778 \uC1FC\uC0DD\uD06C \uD0C8\uCD9C\uACFC \uADF8\uB9B0 \uB9C8\uC77C\uC774 \uC788\uB2E4."@ko ,
+		"Frank Darabont (born Darabont Ferenc, January 28, 1959) is a Hungarian-American film director, screenwriter and producer who has been nominated for three Academy Awards and a Golden Globe. He has directed the films The Shawshank Redemption, The Green Mile, and The Mist, all based on stories by Stephen King. In 2010 he developed, executive produced, and directed the pilot episode of the AMC's The Walking Dead. As of 2012, he is working on his newest project, L.A. Noir."@en ,
+		"\u5F17\u5170\u514B\u00B7\u8FBE\u62C9\u90A6\u7279\uFF081959\u5E741\u670828\u65E5\uFF0D\uFF09\uFF0C\u65E9\u5E74\u51FA\u751F\u4E8E\u6CD5\u56FD\u8499\u8C9D\u5229\u4E9E\u723E\u4E00\u4E2A\u96BE\u6C11\u8425\uFF0C\u662F\u4E00\u4F4D\u7F8E\u56FD\u7535\u5F71\u5BFC\u6F14\u3001\u7DE8\u5287\u548C\u96FB\u5F71\u76E3\u88FD\u3002"@zh ,
+		""@it ;
+	foaf:givenName	"Frank"@en ;
+	foaf:depiction	<http://upload.wikimedia.org/wikipedia/commons/1/19/Frank_Darabont_at_the_PaleyFest_2011_-_The_Walking_Dead_panel.jpg> ;
+	dbpedia-owl:thumbnail	<http://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Frank_Darabont_at_the_PaleyFest_2011_-_The_Walking_Dead_panel.jpg/200px-Frank_Darabont_at_the_PaleyFest_2011_-_The_Walking_Dead_panel.jpg> ;
+	foaf:name	"Frank Darabont"@en .
+@prefix dcterms:	<http://purl.org/dc/terms/> .
+dbpedia:Frank_Darabont	dcterms:subject	<http://dbpedia.org/resource/Category:People_from_Los_Angeles,_California> .
+@prefix category:	<http://dbpedia.org/resource/Category:> .
+dbpedia:Frank_Darabont	dcterms:subject	category:American_screenwriters ,
+		category:American_film_directors ,
+		category:American_people_of_Hungarian_descent ,
+		category:American_film_producers ,
+		<http://dbpedia.org/resource/Category:People_from_Montb%C3%A9liard> ,
+		category:Living_people ,
+		<http://dbpedia.org/resource/Category:1959_births> .
+@prefix wdrs:	<http://www.w3.org/2007/05/powder-s#> .
+dbpedia:Frank_Darabont	wdrs:describedby	<http://dbpedia.org/data/Frank_Darabont.jrdf> ,
+		<http://dbpedia.org/data/Frank_Darabont.jsod> ,
+		<http://dbpedia.org/data/Frank_Darabont.atom> ,
+		<http://dbpedia.org/data/Frank_Darabont.json> ,
+		<http://dbpedia.org/data/Frank_Darabont.n3> ,
+		<http://dbpedia.org/data/Frank_Darabont.nt> .
+@prefix ns23:	<http://dbpedia.org/page/> .
+dbpedia:Frank_Darabont	wdrs:describedby	ns23:Frank_Darabont ,
+		<http://dbpedia.org/data/Frank_Darabont.xml> ,
+		<http://dbpedia.org/data/Frank_Darabont.ttl> .
+@prefix ns24:	<http://www.w3.org/ns/prov#> .
+dbpedia:Frank_Darabont	ns24:wasDerivedFrom	<http://en.wikipedia.org/wiki/Frank_Darabont?oldid=491622538> ;
+	foaf:surname	"Darabont"@en .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+dbpedia:Frank_Darabont	dbpprop:yearsactive	"1981"^^xsd:int ;
+	foaf:isPrimaryTopicOf	ns1:Frank_Darabont ;
+	dbpedia-owl:birthDate	"1959-01-28"^^xsd:date ;
+	dbpprop:placeOfBirth	<http://dbpedia.org/resource/Montb%C3%A9liard> ,
+		dbpedia:France ;
+	dbpedia-owl:birthPlace	<http://dbpedia.org/resource/Montb%C3%A9liard> ,
+		dbpedia:France ;
+	dbpprop:dateOfBirth	"1959-01-28"^^xsd:date ;
+	dbpprop:name	"Darabont, Frank"@en .
+@prefix ns26:	<http://dbpedia.org/resource/Template:> .
+dbpedia:Frank_Darabont	dbpprop:wikiPageUsesTemplate	ns26:Infobox_person ,
+		ns26:Persondata ;
+	dbpedia-owl:abstract	"\u5F17\u5170\u514B\u00B7\u8FBE\u62C9\u90A6\u7279\uFF081959\u5E741\u670828\u65E5\uFF0D\uFF09\uFF0C\u65E9\u5E74\u51FA\u751F\u4E8E\u6CD5\u56FD\u8499\u8C9D\u5229\u4E9E\u723E\u4E00\u4E2A\u96BE\u6C11\u8425\uFF0C\u662F\u4E00\u4F4D\u7F8E\u56FD\u7535\u5F71\u5BFC\u6F14\u3001\u7DE8\u5287\u548C\u96FB\u5F71\u76E3\u88FD\u3002"@zh ,
+		"Frank Darabont \u2013 ameryka\u0144ski re\u017Cyser, scenarzysta i producent filmowy. Znany g\u0142\u00F3wnie dzi\u0119ki swoim ekranizacjom powie\u015Bci wi\u0119ziennych Stephena Kinga."@pl ,
+		"\u0424\u0440\u0435\u043D\u043A \u0414\u0430\u0440\u0430\u0431\u043E\u043D\u0442\u00A0\u2014 \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u044C\u043A\u0438\u0439 \u043A\u0456\u043D\u043E\u0440\u0435\u0436\u0438\u0441\u0435\u0440, \u0441\u0446\u0435\u043D\u0430\u0440\u0438\u0441\u0442 \u0442\u0430 \u043F\u0440\u043E\u0434\u044E\u0441\u0435\u0440. \u0411\u0443\u0432 \u0442\u0440\u0438\u0447\u0456 \u043D\u043E\u043C\u0456\u043D\u043E\u0432\u0430\u043D\u0438\u0439 \u043D\u0430 \u00AB\u041E\u0441\u043A\u0430\u0440\u00BB. \u0412\u0456\u0434\u043E\u043C\u0438\u0439 \u0441\u0432\u043E\u0457\u043C\u0438 \u0432\u0434\u0430\u043B\u0438\u043C\u0438 \u0435\u043A\u0440\u0430\u043D\u0456\u0437\u0430\u0446\u0456\u044F\u043C\u0438 \u0440\u043E\u043C\u0430\u043D\u0456\u0432 \u0421\u0442\u0456\u0432\u0435\u043D\u0430 \u041A\u0456\u043D\u0433\u0430."@uk ,
+		"Frank Darabont ist ein US-amerikanischer Drehbuchautor und Filmregisseur ungarischer Herkunft ."@de ,
+		"Frank Darabont \u00E9 um cineasta, roteirista e produtor de cinema franc\u00EAs. Fez v\u00E1rias adapta\u00E7\u00F5es dos livros de Stephen King."@pt ,
+		"Frank Darabont on yhdysvaltalainen elokuvaohjaaja, -k\u00E4sikirjoittaja ja -tuottaja. H\u00E4n syntyi vuoden 1956 kansannousua paenneille unkarilaisille vanhemmille Montb\u00E9liardissa, Ranskassa. Darabont on ohjannut muiden muassa elokuvat Rita Hayworth \u2013 avain pakoon, Vihre\u00E4 maili ja The Mist \u2013 Usva; muun tuotannon joukkoon lukeutuu K\u00E4rp\u00E4nen II, johon h\u00E4n teki k\u00E4sikirjoituksen. Darabont tuotti ja k\u00E4sikirjoitti zombie-tv-sarjaa nimelt\u00E4 The Walking Dead, jonka pilottijakson h\u00E4n my\u00F6s ohjasi. Darabont on saanut kolme Oscar-ehdokkuutta vuosina 1995 ja 2000. H\u00E4nell\u00E4 oli lis\u00E4ksi Golden Globe -ehdokkuus vuonna 1995."@fi ,
+		"\u30D5\u30E9\u30F3\u30AF\u30FB\u30C0\u30E9\u30DC\u30F3\uFF08Frank Darabont, 1959\u5E741\u670828\u65E5 - \uFF09\u306F\u3001\u30A2\u30E1\u30EA\u30AB\u5408\u8846\u56FD\u306E\u811A\u672C\u5BB6\u3001\u6620\u753B\u76E3\u7763\u3001\u6620\u753B\u30D7\u30ED\u30C7\u30E5\u30FC\u30B5\u30FC\u3002"@ja ,
+		"Frank Darabont magyarul Darabont Ferenc magyar sz\u00E1rmaz\u00E1s\u00FA, amerikai filmrendez\u0151, forgat\u00F3k\u00F6nyv\u00EDr\u00F3, film producer, aki h\u00E1rom Golden Globe-d\u00EDj \u00E9s egy Oscar-d\u00EDj jel\u00F6l\u00E9ssel rendelkezik. Olyan nagy siker\u0171 filmek rendez\u0151je, mint A rem\u00E9ny rabjai, a Hal\u00E1lsoron \u00E9s A k\u00F6d, melyek Stephen King reg\u00E9nyei alapj\u00E1n k\u00E9sz\u00FCltek."@hu ,
+		"\u0424\u0440\u044D\u043D\u043A \u0414\u0430\u0440\u0430\u0431\u043E\u043D\u0442\u00A0\u2014 \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0438\u0439 \u043A\u0438\u043D\u043E\u0440\u0435\u0436\u0438\u0441\u0441\u0451\u0440, \u0441\u0446\u0435\u043D\u0430\u0440\u0438\u0441\u0442 \u0438 \u043F\u0440\u043E\u0434\u044E\u0441\u0435\u0440. \u0411\u044B\u043B \u0442\u0440\u0438\u0436\u0434\u044B \u043D\u043E\u043C\u0438\u043D\u0438\u0440\u043E\u0432\u0430\u043D \u043D\u0430 \u00AB\u041E\u0441\u043A\u0430\u0440\u00BB. \u0418\u0437\u0432\u0435\u0441\u0442\u0435\u043D \u0441\u0432\u043E\u0438\u043C\u0438 \u0443\u0434\u0430\u0447\u043D\u044B\u043C\u0438 \u044D\u043A\u0440\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u044F\u043C\u0438 \u0440\u043E\u043C\u0430\u043D\u043E\u0432 \u0421\u0442\u0438\u0432\u0435\u043D\u0430 \u041A\u0438\u043D\u0433\u0430."@ru ,
+		"Frank Darabont je americk\u00FD filmov\u00FD re\u017Eis\u00E9r, scen\u00E1rista a producent. Je zn\u00E1m p\u0159edev\u0161\u00EDm d\u00EDky zfilmov\u00E1n\u00ED dvou d\u011Bl Stephena Kinga - Vykoupen\u00ED z v\u011Bznice Shawshank a Zelen\u00E1 m\u00EDle."@cs ,
+		"Frank Darabont est un r\u00E9alisateur, sc\u00E9nariste et acteur de cin\u00E9ma am\u00E9ricain d'origine hongroise n\u00E9 en France le 28 janvier 1959 \u00E0 Montb\u00E9liard."@fr ,
+		"Frank Darabont er en amerikansk filmregiss\u00F8r med tre Academy Awards. American Han har v\u00E6rt involvert i produksjon til to Academy Award-nominerte filmer, Frihetens Regn og Den gr\u00F8nne mil."@no ,
+		"\uD504\uB7AD\uD06C \uB2E4\uB77C\uBCF8\uD2B8(Frank Darabont)\uB294 \uBBF8\uAD6D\uC778 \uC601\uD654\uAC10\uB3C5, \uAC01\uBCF8\uAC00, \uC81C\uC791\uC790\uC774\uB2E4. \uC544\uCE74\uB370\uBBF8\uC0C1\uC5D0 3\uBC88 \uB178\uBBF8\uB124\uC774\uD2B8 \uB418\uC5C8\uC73C\uBA70, \uADF8 \uC911 \uADF8\uAC00 \uAC10\uB3C5\uD55C \uC791\uD488\uC778 \uC1FC\uC0DD\uD06C \uD0C8\uCD9C\uACFC \uADF8\uB9B0 \uB9C8\uC77C\uC774 \uC788\uB2E4."@ko ,
+		"Frank Darabont is een Hongaars-Amerikaanse filmregisseur en -scenarist. Zijn bekendste films zijn The Green Mile en The Shawshank Redemption."@nl ,
+		""@it ,
+		"Frank Darabont es un director, guionista y productor de cine estadounidense de origen h\u00FAngaro."@es ,
+		"Frank Darabont (born Darabont Ferenc, January 28, 1959) is a Hungarian-American film director, screenwriter and producer who has been nominated for three Academy Awards and a Golden Globe. He has directed the films The Shawshank Redemption, The Green Mile, and The Mist, all based on stories by Stephen King. In 2010 he developed, executive produced, and directed the pilot episode of the AMC's The Walking Dead. As of 2012, he is working on his newest project, L.A. Noir."@en ,
+		"Frank Darabont f\u00F6dd 28 januari 1959 i Montb\u00E9liard, Frankrike, \u00E4r regiss\u00F6r, manusf\u00F6rfattare, och filmproducent. Darabont slog igenom med det Oscarsnominerade dramat Nyckeln till frihet 1994 som var baserad p\u00E5 en av Stephen Kings b\u00F6cker. Fem \u00E5r senare gjorde han \u00E4nnu en King-baserad film: Den gr\u00F6na milen 1999."@sv .
+@prefix ns27:	<http://www.w3.org/2006/03/wn/wn20/instances/> .
+dbpedia:Frank_Darabont	dbpprop:wordnet_type	ns27:synset-actor-noun-1 ;
+	dbpprop:birthPlace	<http://dbpedia.org/resource/Montb%C3%A9liard> ,
+		dbpedia:France ;
+	dbpprop:birthDate	"1959-01-28"^^xsd:date ;
+	dbpprop:occupation	"Screenwriter"@en ,
+		"Producer"@en ,
+		dbpedia:Film_director ;
+	dbpedia-owl:individualisedPnd	"128749393"@de ;
+	dbpprop:imagesize	"200"^^xsd:int ;
+	dbpedia-owl:wikiPageExternalLink	<http://www.ew.com/ew/article/0,,20192040,00.html> ,
+		<http://www.fearnet.com/videos/b15946_saturn_awards_2009_frank_darabont.html> ,
+		<http://www.liljas-library.com/showinterview.php?id=38> ,
+		<http://www.cemeterydance.com/> .
+@prefix ns28:	<http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/> .
+dbpedia:Frank_Darabont	dbpprop:hasPhotoCollection	ns28:Frank_Darabont ;
+	dbpedia-owl:occupation	dbpedia:Film_director ,
+		dbpedia:Film_producer ,
+		dbpedia:Frank_Darabont__2 ,
+		dbpedia:Frank_Darabont__3 ,
+		dbpedia:Frank_Darabont__1 ,
+		dbpedia:Screenwriter ;
+	dbpedia-owl:birthYear	"1959-01-01T00:00:00+02:00"^^xsd:gYear .
+dbpedia:Stanley_Kubrick	dbpprop:influenced	dbpedia:Frank_Darabont .
+<http://dbpedia.org/resource/Collateral_(film)>	dbpprop:writer	dbpedia:Frank_Darabont ;
+	dbpedia-owl:writer	dbpedia:Frank_Darabont .
+<http://dbpedia.org/resource/Guts_(The_Walking_Dead)>	dbpprop:writer	dbpedia:Frank_Darabont ;
+	dbpedia-owl:writer	dbpedia:Frank_Darabont .
+<http://dbpedia.org/resource/L.A._Noir>	dbpprop:director	dbpedia:Frank_Darabont ;
+	dbpprop:writer	dbpedia:Frank_Darabont ;
+	dbpedia-owl:author	dbpedia:Frank_Darabont ;
+	dbpprop:creator	dbpedia:Frank_Darabont ;
+	dbpedia-owl:director	dbpedia:Frank_Darabont ;
+	dbpedia-owl:creator	dbpedia:Frank_Darabont .
+<http://dbpedia.org/resource/The_Blob_(1988_film)>	dbpedia-owl:writer	dbpedia:Frank_Darabont ;
+	dbpprop:screenplay	dbpedia:Frank_Darabont .
+dbpedia:What_Lies_Ahead	dbpprop:writer	dbpedia:Frank_Darabont ;
+	dbpedia-owl:writer	dbpedia:Frank_Darabont .
+<http://dbpedia.org/resource/Daryl_Dixon_(The_Walking_Dead)>	dbpprop:creator	dbpedia:Frank_Darabont ;
+	dbpedia-owl:creator	dbpedia:Frank_Darabont .
+<http://dbpedia.org/resource/Theodore_%22T-Dog%22_Douglas>	dbpprop:creator	dbpedia:Frank_Darabont ;
+	dbpedia-owl:creator	dbpedia:Frank_Darabont .
+<http://dbpedia.org/resource/L.A._Noir_(TV_series)>	dbpedia-owl:wikiPageRedirects	dbpedia:Frank_Darabont .
+dbpedia:Ardeth_Bey	dbpedia-owl:wikiPageRedirects	dbpedia:Frank_Darabont .
