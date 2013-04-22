@@ -60,7 +60,9 @@
 
     <!-- http://qmul.ac.uk/sw/g7/ontology#hasDistributed -->
 
-    <owl:ObjectProperty rdf:about="http://qmul.ac.uk/sw/g7/ontology#hasDistributed"/>
+    <owl:ObjectProperty rdf:about="http://qmul.ac.uk/sw/g7/ontology#hasDistributed">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
     
 
 
